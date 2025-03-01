@@ -9,5 +9,10 @@ def select_all_gems(db: deps.db):
     gems = db.exec(statement).all()   
     return gems
 
+def select_gem (db:deps.db, id:int):
+    gem = db.get(Gem, id) 
+    return gem
+    
+
 def create_new_gem (db:deps.db, gem: Gem, gem_specs: GemSpecification):
     print(gem)

@@ -18,9 +18,9 @@ env
 docs_build
 site_build
 .venv
+alembic
 docs.zip
 archive.zip
-
 # vim temporary files
 *~
 .*.sw?
